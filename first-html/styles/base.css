@@ -1,0 +1,10 @@
+#nav-list {
+    list-style-type: none;
+    display: flex;
+    column-gap: 10px;
+}
+
+.nav-list-item {
+    text-decoration: none;
+    text-transform: uppercase;
+}
