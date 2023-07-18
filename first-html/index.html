@@ -11,33 +11,60 @@
 
     <meta name="author" content="John Doe">
     <title> Home page </title>
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/base.css">
 
 </head>
 
 <body>
 
-<header>
+<header id="header" >
 
-    <nav>
+    <nav class="nav" >
 
-        <ul id="nav-list">
-            <li>
-                <a class="nav-list-item" href="">Home</a>
+        <img class="logo" src="./assets/logo/aperture.svg" alt="Logo">
+
+        <ul class="list">
+            <li class="list__item" >
+                <a class="list__item-link" href="/">Home</a>
             </li>
-            <li>
-                <a class="nav-list-item" href="">About</a>
+
+            <li class="list__item" >
+                <a class="list__item-link" href="/">About</a>
             </li>
-            <li>
-                <a class="nav-list-item" href="">Contact</a>
+
+            <li class="list__item" >
+                <a class="list__item-link" href="/">Contact</a>
             </li>
-            <li>
-                <a class="nav-list-item" href="">News</a>
-            </li>
-            <li>
-                <a class="nav-list-item" href="">Partnyors</a>
-            </li>
+
         </ul>
+
+        <form>
+
+            <img src="./assets/icons/search.svg" alt="Search icon">
+
+            <input type="text" placeholder="Search for products" >
+
+        </form>
+
+        <div class="container" >
+
+            <div class="elements" >
+                <img class="element__img" src="./assets/images/user.svg" alt="User image">
+                <p class="element__text" >Profile</p>
+            </div>
+
+            <div class="elements" >
+                <img class="element__img" src="./assets/images/heart.svg" alt="Wishlist image">
+                <p class="element__text" >Wishlist</p>
+            </div>
+
+            <div class="elements" >
+                <img class="element__img" src="./assets/images/shopping-bag.svg" alt="Bag image">
+                <p class="element__text" >Bag</p>
+            </div>
+
+        </div>
 
     </nav>
 
