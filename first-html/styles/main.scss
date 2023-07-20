@@ -1,8 +1,11 @@
 @import "reset";
 
+body, html {
+    font-family: 'Poppins', sans-serif;
+}
+
 .nav {
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -11,6 +14,7 @@
     .list {
         display: flex;
         list-style-type: none;
+        margin: 0 40px 0 20px;
 
 
         &__item {
@@ -19,8 +23,11 @@
             &-link {
                 text-decoration: none;
                 text-transform: uppercase;
-                color: black;
-
+                color: #000;
+                font-weight: 400;
+                font-size: 16px;
+                font-style: normal;
+                opacity: 0.7;
             }
 
             &:nth-child(3) {
@@ -28,6 +35,69 @@
             }
         }
     }
+
+    .form {
+        display: flex;
+        max-width: 325px;
+        min-width: 300px;
+        border-radius: 4px;
+        max-height: 30px;
+        padding: 10px 10px;
+        background-color: rgba(211, 211, 211, 0.61);
+        margin-right: 40px;
+        &__input {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            opacity: .6;
+        }
+
+        &__img {
+            width: 13px;
+            opacity: .4;
+            margin-right: 5px;
+        }
+
+    }
+
+    .active {
+        position: relative;
+    }
+
+    .active:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        bottom: -12px;
+        height: 0;
+        border: 3px solid red;
+        border-radius: 10px;
+    }
+
+    .elements {
+        position: relative;
+        margin-right: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+
+        &__container {
+            display: flex;
+        }
+
+        &__img {
+            margin-bottom: 3px;
+
+        }
+
+        &__text {
+            letter-spacing: -0.5px;
+
+        }
+    }
+
 }
 
 .container {

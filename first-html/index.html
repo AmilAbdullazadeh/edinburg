@@ -11,8 +11,14 @@
 
     <meta name="author" content="John Doe">
     <title> Home page </title>
+    <!--  Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/base.css">
+
 
 </head>
 
@@ -39,30 +45,30 @@
 
         </ul>
 
-        <form>
+        <form class="form"  >
 
-            <img src="./assets/icons/search.svg" alt="Search icon">
+            <img class="form__img" src="./assets/icons/search.svg" alt="Search icon">
 
-            <input type="text" placeholder="Search for products" >
+            <input class="form__input" type="text" placeholder="Search for products" >
 
         </form>
 
-        <div class="container" >
+        <div class="elements__container" >
 
-            <div class="elements" >
-                <img class="element__img" src="./assets/images/user.svg" alt="User image">
-                <p class="element__text" >Profile</p>
-            </div>
+            <a href="/" class="elements " >
+                <img class="elements__img" src="./assets/images/user.svg" alt="User image">
+                <p class="elements__text" >Profile</p>
+            </a>
 
-            <div class="elements" >
-                <img class="element__img" src="./assets/images/heart.svg" alt="Wishlist image">
-                <p class="element__text" >Wishlist</p>
-            </div>
+            <a href="/"  class="elements active" >
+                <img class="elements__img" src="./assets/images/heart.svg" alt="Wishlist image">
+                <p class="elements__text" >Wishlist</p>
+            </a>
 
-            <div class="elements" >
-                <img class="element__img" src="./assets/images/shopping-bag.svg" alt="Bag image">
-                <p class="element__text" >Bag</p>
-            </div>
+            <a href="/" class="elements" >
+                <img class="elements__img" src="./assets/images/shopping-bag.svg" alt="Bag image">
+                <p class="elements__text" >Bag</p>
+            </a>
 
         </div>
 
