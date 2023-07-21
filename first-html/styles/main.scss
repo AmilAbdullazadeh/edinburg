@@ -1,112 +1,177 @@
 @import "reset";
 
 body, html {
-    font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+span {
+
 }
 
 .nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+
+  .list {
     display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    list-style-type: none;
+    margin: 0 40px 0 20px;
 
 
-    .list {
-        display: flex;
-        list-style-type: none;
-        margin: 0 40px 0 20px;
+    &__item {
+      margin-right: 10px;
 
-
-        &__item {
-            margin-right: 10px;
-
-            &-link {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: #000;
-                font-weight: 400;
-                font-size: 16px;
-                font-style: normal;
-                opacity: 0.7;
-            }
-
-            &:nth-child(3) {
-                margin-right: 0;
-            }
-        }
-    }
-
-    .form {
-        display: flex;
-        max-width: 325px;
-        min-width: 300px;
-        border-radius: 4px;
-        max-height: 30px;
-        padding: 10px 10px;
-        background-color: rgba(211, 211, 211, 0.61);
-        margin-right: 40px;
-        &__input {
-            background-color: transparent;
-            outline: none;
-            border: none;
-            opacity: .6;
-        }
-
-        &__img {
-            width: 13px;
-            opacity: .4;
-            margin-right: 5px;
-        }
-
-    }
-
-    .active {
-        position: relative;
-    }
-
-    .active:after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 0;
-        bottom: -12px;
-        height: 0;
-        border: 3px solid red;
-        border-radius: 10px;
-    }
-
-    .elements {
-        position: relative;
-        margin-right: 20px;
-        text-align: center;
+      &-link {
         text-decoration: none;
+        text-transform: uppercase;
         color: #000;
+        font-weight: 400;
+        font-size: 16px;
+        font-style: normal;
+        opacity: 0.7;
+      }
 
-        &__container {
-            display: flex;
-        }
-
-        &__img {
-            margin-bottom: 3px;
-
-        }
-
-        &__text {
-            letter-spacing: -0.5px;
-
-        }
+      &:nth-child(3) {
+        margin-right: 0;
+      }
     }
+  }
+
+  .form {
+    display: flex;
+    max-width: 325px;
+    min-width: 300px;
+    border-radius: 4px;
+    max-height: 30px;
+    padding: 10px 10px;
+    background-color: rgba(211, 211, 211, 0.61);
+    margin-right: 40px;
+
+    &__input {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      opacity: .6;
+    }
+
+    &__img {
+      width: 13px;
+      opacity: .4;
+      margin-right: 5px;
+    }
+
+  }
+
+  a[href="/"] {
+
+  }
+
+  .active {
+    position: relative;
+  }
+
+  .active:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    height: 0;
+    border: 3px solid red;
+    border-radius: 10px;
+  }
+
+  .elements {
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+
+    &__container {
+      display: flex;
+    }
+
+    &__img {
+      margin-bottom: 3px;
+
+    }
+
+    &__text {
+      letter-spacing: -0.5px;
+
+    }
+  }
 
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 #header {
-    width: 100%;
-    height: 60px;
-    padding-right: 70px;
-    padding-left: 70px;
+  width: 100%;
+  height: 60px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+#footer {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  background-color: #000;
+  padding: 40px 80px;
+
+  .navigation {
+
+    &__container {
+      display: flex;
+    }
+
+    &__list {
+      max-width: 350px;
+      margin-right: 60px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__item {
+      color: #fff;
+      opacity: .7;
+      font-size: 18px;
+      margin-bottom: 8px;
+
+      &:nth-child(1) {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 1.5em;
+      }
+
+    }
+
+    &__link {
+      color: #fff;
+      text-decoration: none;
+    }
+
+  }
 }
