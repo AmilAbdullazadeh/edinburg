@@ -6,6 +6,8 @@ body, html {
 
 * {
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  //overflow: hidden;
 }
 
 span {
@@ -126,7 +128,89 @@ span {
 
 #main {
   width: 100%;
-  height: 100vh;
+  //height: 100vh;
+  padding: 70px 120px;
+
+  #recommended {
+
+    .product {
+
+      &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 70px;
+      }
+
+      &__item {
+        width: 350px;
+        height: 500px;
+
+      }
+
+      &__top {
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/images/product_image.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        position: relative;
+
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          right: 10px;
+          top: 15px;
+          background-color: #fff;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+
+          &:hover img {
+            transform: scale(1.5);
+          }
+
+          img {
+            width: 16px;
+            transition: all .35s linear;
+          }
+        }
+      }
+
+      &__bottom {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+
+      }
+
+      &__price {
+
+        &::before {
+          content: " $ ";
+        }
+
+      }
+
+      &__title {
+
+        opacity: .7;
+      }
+
+    }
+  }
+
+
 }
 
 #footer {
