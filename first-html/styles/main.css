@@ -48,13 +48,28 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
+.menu {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+}
+
+.logo {
+  width: 45px;
+}
+
 .nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -123,6 +138,7 @@ table {
 }
 .nav .elements__container {
   display: flex;
+  flex-wrap: wrap;
 }
 .nav .elements__img {
   margin-bottom: 3px;
@@ -144,14 +160,25 @@ table {
 
 #main {
   width: 100%;
-  padding: 70px 120px;
+  padding: 70px;
 }
 #main #recommended .product__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 70px;
+  column-gap: 116px;
+}
+@media (max-width: 991px) {
+  #main #recommended .product__list {
+    justify-content: space-between;
+    column-gap: 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  #main #recommended .product__list {
+    justify-content: center;
+  }
 }
 #main #recommended .product__item {
   width: 350px;
@@ -180,6 +207,11 @@ table {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  animation-name: img-move;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 #main #recommended .product__top .icon:hover img {
   transform: scale(1.5);
@@ -190,7 +222,6 @@ table {
 }
 #main #recommended .product__bottom {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
@@ -211,6 +242,7 @@ table {
 }
 #footer .navigation__container {
   display: flex;
+  flex-wrap: wrap;
 }
 #footer .navigation__list {
   max-width: 350px;
@@ -236,6 +268,47 @@ table {
 #footer .navigation__link {
   color: #fff;
   text-decoration: none;
+}
+
+@keyframes img-move {
+  0% {
+    right: 10px;
+  }
+  50% {
+    background-color: rebeccapurple;
+    right: 250px;
+  }
+  100% {
+    background-color: black;
+    right: 320px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .menu {
+    display: block;
+  }
+  #main {
+    padding: 35px;
+  }
+  .nav .list, .nav .elements__container, .nav .form {
+    display: none;
+  }
+  #header {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  #main #recommended .product__list {
+    row-gap: 50px;
+    column-gap: 15px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .product__item {
+    height: 400px !important;
+  }
+  #footer {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

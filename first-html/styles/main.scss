@@ -1,4 +1,5 @@
 @import "reset";
+@import "mixins";
 
 body, html {
 
@@ -14,8 +15,19 @@ span {
 
 }
 
+.menu {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+}
+
+.logo {
+  width: 45px;
+}
+
 .nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -100,6 +112,7 @@ span {
 
     &__container {
       display: flex;
+      flex-wrap: wrap;
     }
 
     &__img {
@@ -129,7 +142,7 @@ span {
 #main {
   width: 100%;
   //height: 100vh;
-  padding: 70px 120px;
+  padding: 70px;
 
   #recommended {
 
@@ -138,9 +151,20 @@ span {
       &__list {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         flex-wrap: wrap;
+        //margin: 0 auto;
         row-gap: 70px;
+        column-gap: 116px;
+
+        @include desktop {
+          justify-content: space-between;
+          column-gap: 0 !important;
+        }
+
+        @include tablet {
+          justify-content: center;
+        }
+
       }
 
       &__item {
@@ -173,6 +197,11 @@ span {
           width: 30px;
           height: 30px;
           cursor: pointer;
+          animation-name: img-move;
+          animation-duration: 5s;
+          animation-delay: 1s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
 
           &:hover img {
             transform: scale(1.5);
@@ -187,7 +216,6 @@ span {
 
       &__bottom {
         width: 100%;
-        height: 100%;
         display: flex;
         justify-content: space-between;
         margin-top: 5px;
@@ -224,6 +252,7 @@ span {
 
     &__container {
       display: flex;
+      flex-wrap: wrap;
     }
 
     &__list {
@@ -258,4 +287,84 @@ span {
     }
 
   }
+}
+
+// animations
+@keyframes img-move {
+  //from {
+  //  right: 10px;
+  //}
+  //to {
+  //  right: 320px;
+  //}
+
+  0% {
+    right: 10px;
+  }
+  50% {
+    background-color: rebeccapurple;
+    right: 250px;
+  }
+  100% {
+    background-color: black;
+
+    right: 320px;
+  }
+
+
+}
+
+
+// lg
+@media only screen and (max-width: 1200px) {
+
+}
+
+// desktop
+@media only screen and (max-width: 992px) {
+  .menu {
+    display: block;
+  }
+
+  #main {
+    padding: 35px;
+  }
+
+  .nav {
+
+    .list, .elements__container, .form {
+      display: none;
+    }
+
+  }
+
+  #header {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  #main #recommended .product__list {
+    row-gap: 50px;
+    column-gap: 15px;
+  }
+
+}
+
+// tablet
+@media only screen and (max-width: 768px) {
+
+
+}
+
+// mobiles
+@media only screen and (max-width: 576px) {
+
+  .product__item {
+    height: 400px !important;
+  }
+
+  #footer {
+    height: auto;
+  }
+
 }
