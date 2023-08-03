@@ -1,0 +1,153 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.line-throght {
+  text-decoration: line-through;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .checkout {
+  width: 700px;
+}
+#main .checkout__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#main .checkout__header-title {
+  text-transform: capitalize;
+  font-size: 22px;
+  word-spacing: 5px;
+  font-weight: 600;
+}
+#main .checkout__header-price {
+  font-size: 18px;
+  font-weight: 600;
+}
+#main .checkout__product {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 15px;
+}
+#main .checkout__product-content {
+  display: flex;
+  justify-content: start;
+  column-gap: 15px;
+  width: 100%;
+}
+#main .checkout__product-img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+#main .checkout__product-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#main .checkout__product-leftside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+#main .checkout__product-name {
+  font-weight: 600;
+}
+#main .checkout__product-info {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 2.5em;
+}
+#main .checkout__product-info select {
+  border: none;
+  outline: none;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 5px;
+}
+#main .checkout__product-rightside {
+  text-align: right;
+}
+#main .checkout__product-saledprice {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#main .checkout__product-price-color {
+  font-weight: 600;
+  color: red;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=cehckout.css.map */

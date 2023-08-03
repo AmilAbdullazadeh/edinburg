@@ -1,0 +1,147 @@
+@import "style";
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.opacity {
+  opacity: .4;
+}
+
+.line-throght {
+  text-decoration: line-through;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .checkout {
+
+    width: 700px;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      &-title {
+        text-transform: capitalize;
+        font-size: 22px;
+        word-spacing: 5px;
+        font-weight: 600;
+      }
+
+      &-price {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+
+    &__product {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 15px;
+
+      &-content {
+        display: flex;
+        justify-content: start;
+        column-gap: 15px;
+        width: 100%;
+
+
+
+      }
+
+      &-img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 7px;
+
+      }
+
+      &-details {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+      }
+
+      &-leftside {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+
+      }
+
+      &-name {
+        font-weight: 600;
+
+      }
+
+      &-description {
+
+
+      }
+
+      &-company {
+
+
+      }
+
+      &-info {
+        display: flex;
+        column-gap: 10px;
+        margin-top: 2.5em;
+
+        select {
+          border: none;
+          outline: none;
+          background-color: lightgray;
+          padding: 5px;
+          border-radius: 5px;
+
+          option {
+
+
+          }
+
+        }
+
+      }
+
+      &-rightside {
+        text-align: right;
+
+      }
+
+      &-saledprice {
+        margin-bottom: 5px;
+        font-weight: 600;
+
+
+      }
+
+      &-price {
+
+        &-color {
+          font-weight: 600;
+          color: red;
+          text-decoration: none;
+
+        }
+      }
+
+      &-btns {
+
+
+      }
+    }
+  }
+
+}

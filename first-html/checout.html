@@ -18,8 +18,7 @@
 
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/cehckout.css">
 
 
 </head>
@@ -82,77 +81,62 @@
 
 <main id="main">
 
-    <section id="recommended">
+    <section class="checkout">
 
-        <div class="product__list">
+        <div class="checkout__header">
+            <b class="checkout__header-title" >My shipping bag</b>
+            <b class="checkout__header-price" >Total: $ 156.4</b>
+        </div>
 
-            <div class="product__item">
+        <div class="checkout__product">
 
-                <div class="product__top">
-                    <div class="icon">
-                        <img src="./assets/images/heart.svg" alt="Favourite icon">
+            <div class="checkout__product-content">
+
+                <img class="checkout__product-img" src="./assets/images/product_image.jpeg" alt="">
+
+                <div class="checkout__product-details">
+
+                    <div class="checkout__product-leftside">
+                        <h5 class="checkout__product-name" >Street 9</h5>
+                        <p class="checkout__product-description">Overlay crop top</p>
+                        <p class="checkout__product-company opacity" >Sold by: Unique Fashion</p>
+
+                        <div class="checkout__product-info" >
+
+                            <select class="checkout__product-info-size" name="size">
+                                <option value="L">Size: L</option>
+                                <option value="M">Size: M</option>
+                                <option value="S">Size: S</option>
+                            </select>
+
+                            <select class="checkout__product-info-quantity" name="quantity">
+                                <option value="1">Qty: 1</option>
+                                <option value="2">Qty: 2</option>
+                                <option value="3">Qty: 3</option>
+                            </select>
+
+                        </div>
                     </div>
-                </div>
-                <div class="product__bottom">
-                    <p class="product__title" >Brown solid leather boots</p>
-                    <strong class="product__price" >350</strong>
+
+                    <div class="checkout__product-rightside" >
+
+                        <h3 class="checkout__product-saledprice">
+                            $ 799
+                        </h3>
+
+                        <div class="checkout__product-price">
+                            <span class="opacity line-throght" >$ 999</span>
+                            <span class="checkout__product-price-color" >20 % OFF</span>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
-            <div class="product__item">
+            <hr>
 
-                <div class="product__top">
-                    <div class="icon">
-                        <img src="./assets/images/heart.svg" alt="Favourite icon">
-                    </div>
-                </div>
-                <div class="product__bottom">
-                    <p class="product__title" >Brown solid leather boots</p>
-                    <strong class="product__price" >350</strong>
-                </div>
-
-            </div>
-
-            <div class="product__item">
-
-                <div class="product__top">
-                    <div class="icon">
-                        <img src="./assets/images/heart.svg" alt="Favourite icon">
-                    </div>
-                </div>
-                <div class="product__bottom">
-                    <p class="product__title" >Brown solid leather boots</p>
-                    <strong class="product__price" >350</strong>
-                </div>
-
-            </div>
-
-            <div class="product__item">
-
-                <div class="product__top">
-                    <div class="icon">
-                        <img src="./assets/images/heart.svg" alt="Favourite icon">
-                    </div>
-                </div>
-                <div class="product__bottom">
-                    <p class="product__title" >Brown solid leather boots</p>
-                    <strong class="product__price" >350</strong>
-                </div>
-
-            </div>
-
-            <div class="product__item">
-
-                <div class="product__top">
-                    <div class="icon">
-                        <img src="./assets/images/heart.svg" alt="Favourite icon">
-                    </div>
-                </div>
-                <div class="product__bottom">
-                    <p class="product__title" >Brown solid leather boots</p>
-                    <strong class="product__price" >350</strong>
-                </div>
+            <div class="checkout__product-btns">
 
             </div>
 
