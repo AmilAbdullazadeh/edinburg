@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./styles/bootstrap/bootstrap.min.css">
+
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/cehckout.css">
@@ -25,218 +27,269 @@
 
 <body>
 
-<header id="header">
+<!--<header id="header">-->
 
-    <nav class="nav">
+<!--    <nav class="nav">-->
 
-        <img class="logo" src="./assets/logo/aperture.svg" alt="Logo">
+<!--        <img class="logo" src="./assets/logo/aperture.svg" alt="Logo">-->
 
-        <ul class="list">
-            <li class="list__item">
-                <a class="list__item-link" href="/">Home</a>
-            </li>
+<!--        <ul class="list">-->
+<!--            <li class="list__item">-->
+<!--                <a class="list__item-link" href="/">Home</a>-->
+<!--            </li>-->
 
-            <li class="list__item">
-                <a class="list__item-link" href="/">About</a>
-            </li>
+<!--            <li class="list__item">-->
+<!--                <a class="list__item-link" href="/">About</a>-->
+<!--            </li>-->
 
-            <li class="list__item">
-                <a class="list__item-link" href="/">Contact</a>
-            </li>
+<!--            <li class="list__item">-->
+<!--                <a class="list__item-link" href="/">Contact</a>-->
+<!--            </li>-->
 
-        </ul>
+<!--        </ul>-->
 
-        <form class="form">
+<!--        <form class="form">-->
 
-            <img class="form__img" src="./assets/icons/search.svg" alt="Search icon">
+<!--            <img class="form__img" src="./assets/icons/search.svg" alt="Search icon">-->
 
-            <input class="form__input" type="text" placeholder="Search for products">
+<!--            <input class="form__input" type="text" placeholder="Search for products">-->
 
-        </form>
+<!--        </form>-->
 
-        <div class="elements__container">
+<!--        <div class="elements__container">-->
 
-            <a href="/" class="elements ">
-                <img class="elements__img" src="./assets/images/user.svg" alt="User image">
-                <p class="elements__text">Profile</p>
-            </a>
+<!--            <a href="/" class="elements ">-->
+<!--                <img class="elements__img" src="./assets/images/user.svg" alt="User image">-->
+<!--                <p class="elements__text">Profile</p>-->
+<!--            </a>-->
 
-            <a href="/" class="elements active">
-                <img class="elements__img" src="./assets/images/heart.svg" alt="Wishlist image">
-                <p class="elements__text">Wishlist</p>
-            </a>
+<!--            <a href="/" class="elements active">-->
+<!--                <img class="elements__img" src="./assets/images/heart.svg" alt="Wishlist image">-->
+<!--                <p class="elements__text">Wishlist</p>-->
+<!--            </a>-->
 
-            <a href="/" class="elements">
-                <img class="elements__img" src="./assets/images/shopping-bag.svg" alt="Bag image">
-                <p class="elements__text">Bag</p>
-            </a>
+<!--            <a href="/" class="elements">-->
+<!--                <img class="elements__img" src="./assets/images/shopping-bag.svg" alt="Bag image">-->
+<!--                <p class="elements__text">Bag</p>-->
+<!--            </a>-->
 
-        </div>
+<!--        </div>-->
 
-        <img class="menu" src="./assets/icons/menu.svg" alt="Menu icon">
+<!--        <img class="menu" src="./assets/icons/menu.svg" alt="Menu icon">-->
 
-    </nav>
+<!--    </nav>-->
 
-</header>
+<!--</header>-->
 
-<main id="main">
+<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 25%">25%</div>
+</div>
 
-    <section class="checkout">
+<!--<main id="main">-->
 
-        <div class="checkout__header">
-            <b class="checkout__header-title" >My shipping bag</b>
-            <b class="checkout__header-price" >Total: $ 156.4</b>
-        </div>
+<!--    <section class="checkout">-->
 
-        <div class="checkout__product">
+<!--        <div class="checkout__header">-->
+<!--            <b class="checkout__header-title" >My shipping bag</b>-->
+<!--            <b class="checkout__header-price" >Total: $ 156.4</b>-->
+<!--        </div>-->
 
-            <div class="checkout__product-content">
+<!--        <div class="checkout__product">-->
 
-                <img class="checkout__product-img" src="./assets/images/product_image.jpeg" alt="">
+<!--            <div class="checkout__product-content">-->
 
-                <div class="checkout__product-details">
+<!--                <img class="checkout__product-img" src="./assets/images/product_image.jpeg" alt="">-->
 
-                    <div class="checkout__product-leftside">
-                        <h5 class="checkout__product-name" >Street 9</h5>
-                        <p class="checkout__product-description">Overlay crop top</p>
-                        <p class="checkout__product-company opacity" >Sold by: Unique Fashion</p>
+<!--                <div class="checkout__product-details">-->
 
-                        <div class="checkout__product-info" >
+<!--                    <div class="checkout__product-leftside">-->
+<!--                        <h5 class="checkout__product-name" >Street 9</h5>-->
+<!--                        <p class="checkout__product-description">Overlay crop top</p>-->
+<!--                        <p class="checkout__product-company opacity" >Sold by: Unique Fashion</p>-->
 
-                            <select class="checkout__product-info-size" name="size">
-                                <option value="L">Size: L</option>
-                                <option value="M">Size: M</option>
-                                <option value="S">Size: S</option>
-                            </select>
+<!--                        <div class="checkout__product-info" >-->
 
-                            <select class="checkout__product-info-quantity" name="quantity">
-                                <option value="1">Qty: 1</option>
-                                <option value="2">Qty: 2</option>
-                                <option value="3">Qty: 3</option>
-                            </select>
+<!--                            <select class="checkout__product-info-size" name="size">-->
+<!--                                <option value="L">Size: L</option>-->
+<!--                                <option value="M">Size: M</option>-->
+<!--                                <option value="S">Size: S</option>-->
+<!--                            </select>-->
 
-                        </div>
+<!--                            <select class="checkout__product-info-quantity" name="quantity">-->
+<!--                                <option value="1">Qty: 1</option>-->
+<!--                                <option value="2">Qty: 2</option>-->
+<!--                                <option value="3">Qty: 3</option>-->
+<!--                            </select>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="checkout__product-rightside" >-->
+
+<!--                        <h3 class="checkout__product-saledprice">-->
+<!--                            $ 799-->
+<!--                        </h3>-->
+
+<!--                        <div class="checkout__product-price">-->
+<!--                            <span class="opacity line-throght" >$ 999</span>-->
+<!--                            <span class="checkout__product-price-color" >20 % OFF</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+
+<!--            </div>-->
+
+<!--            <hr>-->
+
+<!--            <div class="checkout__product-btns">-->
+
+<!--            </div>-->
+
+<!--        </div>-->
+
+<!--    </section>-->
+
+<!--</main>-->
+
+<!--<footer id="footer">-->
+
+<!--    <div class="navigation__container">-->
+<!--        <ul class="navigation__list">-->
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Shopping</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Men</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Women</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Kids</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+
+<!--        <ul class="navigation__list">-->
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Shopping</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Men</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Women</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Kids</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+
+<!--        <ul class="navigation__list">-->
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Shopping</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Men</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Women</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Kids</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+
+<!--        <ul class="navigation__list">-->
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Shopping</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Men</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Women</a>-->
+<!--            </li>-->
+
+<!--            <li class="navigation__item">-->
+<!--                <a class="navigation__link" href="">Kids</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+
+<!--    <form class="form__container">-->
+<!--        <div class="form__title">-->
+<!--            The latest-->
+<!--        </div>-->
+<!--        <p class="form__text">-->
+<!--            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, inventore.-->
+<!--        </p>-->
+
+<!--        <input class="form__input" type="email" placeholder="Email">-->
+
+<!--        <input class="form__submit" type="submit" value="Sign up">-->
+<!--    </form>-->
+
+<!--</footer>-->
+
+<div class="container">
+
+    <div class="row m mt-4 mt-md-5 mt-sm-0">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
-
-                    <div class="checkout__product-rightside" >
-
-                        <h3 class="checkout__product-saledprice">
-                            $ 799
-                        </h3>
-
-                        <div class="checkout__product-price">
-                            <span class="opacity line-throght" >$ 999</span>
-                            <span class="checkout__product-price-color" >20 % OFF</span>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
-
-            <hr>
-
-            <div class="checkout__product-btns">
-
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
             </div>
-
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </section>
-
-</main>
-
-<footer id="footer">
-
-    <div class="navigation__container">
-        <ul class="navigation__list">
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Shopping</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Men</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Women</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Kids</a>
-            </li>
-        </ul>
-
-        <ul class="navigation__list">
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Shopping</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Men</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Women</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Kids</a>
-            </li>
-        </ul>
-
-        <ul class="navigation__list">
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Shopping</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Men</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Women</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Kids</a>
-            </li>
-        </ul>
-
-        <ul class="navigation__list">
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Shopping</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Men</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Women</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="">Kids</a>
-            </li>
-        </ul>
     </div>
 
-    <form class="form__container">
-        <div class="form__title">
-            The latest
-        </div>
-        <p class="form__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, inventore.
-        </p>
+</div>
 
-        <input class="form__input" type="email" placeholder="Email">
 
-        <input class="form__submit" type="submit" value="Sign up">
-    </form>
-
-</footer>
-
+<script src="./styles/bootstrap/boostrap.min.js"></script>
 </body>
 
 </html>
